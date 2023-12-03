@@ -19,13 +19,13 @@
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Judul</label>
                     <div class="col-sm-10">
-                      <input type="text" name="npm" class="form-control" value="{{$data->judul}}" required>
+                      <input type="text" name="judul" class="form-control" value="{{$data->judul}}" required>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Deskripsi</label>
                     <div class="col-sm-10">
-                      <input type="text" name="nama" class="form-control" value="{{$data->deskripsi}}" required>
+                      <input type="text" name="deskripsi" class="form-control" value="{{$data->deskripsi}}" required>
                     </div>
                   </div>
                   <div class="form-group">
