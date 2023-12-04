@@ -13,7 +13,7 @@
             <!-- /.box-header -->
             <!-- form start -->
             
-            <form class="form-horizontal" action="/superadmin/beranda" method="post">
+            <form class="form-horizontal" action="/superadmin/beranda" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="box-body">
                   <div class="form-group">
@@ -31,12 +31,14 @@
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Gambar 1</label>
                     <div class="col-sm-10">
+                      <img src="/storage/image/{{$data->gambar1}}" width="100px">
                       <input type="file" name="gambar1" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Gambar 2</label>
                     <div class="col-sm-10">
+                      <img src="/storage/image/{{$data->gambar2}}" width="100px">
                       <input type="file" name="gambar2" class="form-control">
                     </div>
                   </div>
@@ -61,6 +63,7 @@
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Gambar 3</label>
                     <div class="col-sm-10">
+                      <img src="/storage/image/{{$data->gambar3}}" width="100px">
                       <input type="file" name="gambar3" class="form-control">
                     </div>
                   </div>
@@ -133,12 +136,14 @@
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Partner 1</label>
                     <div class="col-sm-10">
+                      <img src="/storage/image/{{$data->partner1}}" width="100px">
                       <input type="file" name="partner1" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Partner 2</label>
                     <div class="col-sm-10">
+                      <img src="/storage/image/{{$data->partner2}}" width="100px">
                       <input type="file" name="partner2" class="form-control">
                     </div>
                   </div>

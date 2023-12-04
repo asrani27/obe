@@ -21,14 +21,6 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\SerahTerimaController;
 
 Route::get('/', function () {
-    if (Auth::check()) {
-        if (Auth::user()->hasRole('superadmin')) {
-            return redirect('superadmin');
-        } elseif (Auth::user()->hasRole('pemohon')) {
-            return redirect('pemohon');
-        }
-    }
-    return view('welcome');
 });
 
 Route::get('login', [LoginController::class, 'index'])->name('login');
@@ -41,6 +33,7 @@ Route::get('/reload-captcha', [LoginController::class, 'reloadCaptcha']);
 Route::get('/logout', [LogoutController::class, 'logout']);
 
 
+Route::get('/', [FrontController::class, 'beranda']);
 Route::get('fitur', [FrontController::class, 'fitur']);
 Route::get('tim', [FrontController::class, 'tim']);
 Route::get('partner', [FrontController::class, 'partner']);
