@@ -17,10 +17,10 @@
 
     <li class="header">KONFIGURASI FRONTEND</li>
     <li class="{{ (request()->is('superadmin/beranda*')) ? 'active' : '' }}"><a href="/superadmin/beranda"><i class="fa fa-arrow-right"></i> <span><i>Beranda</i></span></a></li>
-    <li class="{{ (request()->is('superadmin/fitur*')) ? 'active' : '' }}"><a href="/superadmin/fitur"><i class="fa fa-arrow-right"></i> <span><i>Fitur</i></span></a></li>
+    {{-- <li class="{{ (request()->is('superadmin/fitur*')) ? 'active' : '' }}"><a href="/superadmin/fitur"><i class="fa fa-arrow-right"></i> <span><i>Fitur</i></span></a></li>
     <li class="{{ (request()->is('superadmin/tim*')) ? 'active' : '' }}"><a href="/superadmin/tim"><i class="fa fa-arrow-right"></i> <span><i>Tim</i></span></a></li>
     <li class="{{ (request()->is('superadmin/partner*')) ? 'active' : '' }}"><a href="/superadmin/partner"><i class="fa fa-arrow-right"></i> <span><i>Partner</i></span></a></li>
-    <li class="{{ (request()->is('superadmin/hubungikami*')) ? 'active' : '' }}"><a href="/superadmin/hubungikami"><i class="fa fa-arrow-right"></i> <span><i>Hubungi Kami</i></span></a></li>
+    <li class="{{ (request()->is('superadmin/hubungikami*')) ? 'active' : '' }}"><a href="/superadmin/hubungikami"><i class="fa fa-arrow-right"></i> <span><i>Hubungi Kami</i></span></a></li> --}}
     <li class="header">SETTING</li>
     <li class="{{ (request()->is('superadmin/gp*')) ? 'active' : '' }}"><a href="/superadmin/gp"><i class="fa fa-key"></i> <span><i>Ganti Pass</i></span></a></li>
     <li><a href="/logout"><i class="fa fa-sign-out"></i> <span><i>Logout</i></span></a></li>
